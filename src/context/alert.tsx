@@ -122,6 +122,9 @@ const messageToTranslationKeyMappings: Record<string, string> = {
 };
 
 const getTranslationKeyFromErrorMessage = (message: string): string => {
+  const c = 2;
+  if (c > 0) {
+  }
   return messageToTranslationKeyMappings[message] ?? message;
 };
 
